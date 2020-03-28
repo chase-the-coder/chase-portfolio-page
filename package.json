@@ -1,0 +1,28 @@
+{
+	"name": "chase-portfolio-page",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"dependencies": {
+		"webpack-cli": "^3.3.11",
+		"webpack": "^4.42.1"
+	},
+	"devDependencies": {
+		"html-loader": "^1.0.0",
+		"html-webpack-plugin": "^4.0.3"
+	},
+	"scripts": {
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chase-the-coder/chase-portfolio-page.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/chase-the-coder/chase-portfolio-page/issues"
+	},
+	"homepage": "https://github.com/chase-the-coder/chase-portfolio-page#readme"
+}
