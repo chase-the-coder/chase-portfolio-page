@@ -1,14 +1,12 @@
-const initUpdateNavbarOnScroll = () => {
-	const navbar = document.querySelector('.navbar-lewagon');
-	if (navbar) {
-		window.addEventListener('scroll', () => {
-			if (window.scrollY >= window.innerHeight) {
-				navbar.classList.add('navbar-lewagon-white');
-			} else {
-				navbar.classList.remove('navbar-lewagon-white');
-			}
-		});
-	}
-};
+$(document).ready(function() {
+	$(window).scroll(function() {
+		var height = $('.first-container').height();
+		var scrollTop = $(window).scrollTop();
 
-export { initUpdateNavbarOnScroll };
+		if (scrollTop >= height - 40) {
+			$('.nav-container').addClass('solid-nav');
+		} else {
+			$('.nav-container').removeClass('solid-nav');
+		}
+	});
+});
