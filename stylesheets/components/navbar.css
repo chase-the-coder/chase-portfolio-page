@@ -1,16 +1,29 @@
-.navbar-lewagon {
-	background-color: transparent;
-	transition: 0.5s background-color ease;
+.nav-container {
+	height: 58px;
+	width: 100%;
+	position: fixed;
+	color: white;
+	letter-spacing: 0.025em;
+	transition: background-color 0.2s linear;
 }
-
-.navbar-lewagon-white {
-	background-color: white;
+.nav-container.solid-nav {
+	background-color: black;
+	transition: background-color 0.2s linear;
 }
-
-.navbar-lewagon .navbar-collapse {
-	flex-grow: 0;
+.nav-container .nav-row {
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-top: 18px;
 }
-
-.navbar-lewagon .navbar-brand img {
-	width: 40px;
+.nav-container .nav-row .nav-logo {
+	display: inline-block;
+	font-weight: 900;
+}
+.nav-container .nav-row .nav-controls {
+	float: right;
+}
+.nav-container .nav-row .nav-controls a {
+	padding-left: 20px;
 }
